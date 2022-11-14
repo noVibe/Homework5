@@ -26,10 +26,10 @@ public class Main {
         if (passengerAmount < sits) {
             System.out.println("You can get a sitting place");
         }
-        if (passengerAmount > 59 && passengerAmount < 102) {
+        if (passengerAmount >= sits && passengerAmount < vanCapacity) {
             System.out.println("You can get a standing place");
         }
-        if (passengerAmount > 101) {
+        if (passengerAmount >= vanCapacity) {
             System.out.println("The van is full");
         }
 //      =====Task 2-1=====
@@ -54,9 +54,9 @@ public class Main {
         byte capacityVan = 102;
         byte sittingPlaces = 60;
         byte passengers = 101;
-        if (passengers < 60) {
+        if (passengers < sittingPlaces) {
             System.out.println("Sitting place available");
-        } else if (passengers > 101) {
+        } else if (passengers >= capacityVan) {
             System.out.println("Tickets were sold out");
         } else {
             System.out.println("Standing place is available");
