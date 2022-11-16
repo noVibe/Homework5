@@ -51,6 +51,7 @@ public class Main {
             System.out.println("Get a job");
         }
 //        =====Task 2-3=====
+        System.out.println("=====Task 2-3=====");
         byte capacityVan = 102;
         byte sittingPlaces = 60;
         byte passengers = 101;
